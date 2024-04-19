@@ -69,6 +69,7 @@ Rails.application.configure do
   
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
+  
   host = 'floating-lowlands-84664.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
@@ -76,7 +77,7 @@ Rails.application.configure do
     :port           => '587',
     :authentication => :plain,
     :user_name      => 'apikey',
-    :password       => ENV['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'],
+    :password       => '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',
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
   }
