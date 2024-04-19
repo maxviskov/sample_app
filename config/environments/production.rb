@@ -76,11 +76,13 @@ Rails.application.configure do
     :port           => '587',
     :authentication => :plain,
     :user_name      => 'apikey',
-    :password       => ENV['SENDGRID_API_KEY'],
+    :password       => ENV['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'],
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
   }
   
+
+
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
